@@ -21,6 +21,8 @@ public class Page {
 	By cart					= By.id("header_cart");
 	String menuItem_Format	= ".//li[contains(@class, 'menu-item') and text() = '%s']";
 	By searchField			= By.name("s");
+	By searchButton			= By.name("btn");
+
 
 	public CartPage clickCart(){
 		webDriver.findElement(cart).click();
